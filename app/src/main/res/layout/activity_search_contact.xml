@@ -1,46 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
+    android:id="@+id/activity_search_contact"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="org.dalol.activitylifecycleyora.MainActivity">
+    android:orientation="vertical"
+    tools:context="org.dalol.activitylifecycleyora.SearchContactActivity">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="16dp"
-        android:background="#aaaaaa"
-        android:id="@+id/activity_main_text"
-        android:text="Not yet set !" />
-
-    <!--只要给一个ID ，就可以把它的状态保存下来-->
     <EditText
+        android:id="@+id/activity_search_contacts_searchText"
+        android:hint="Search Query"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/activity_main_text"
-        android:layout_marginTop="8dp"
-        android:id="@+id/activity_main_editText"
         />
 
     <Button
+        android:id="@+id/activity_search_contact_doSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:text="A button"
-        android:id="@+id/activity_main_button"
+        android:text="Do Search"
         />
 
     <Button
+        android:id="@+id/activity_search_contact_cancel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/activity_main_editText"
+        android:text="Cancel"
+        />
+    <Button
+        android:id="@+id/activity_search_contact_separate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:text="隔开"
-        android:id="@+id/activity_main_separate"
+        android:layout_marginBottom="8dp"
         />
 
-</RelativeLayout>
+</LinearLayout>
