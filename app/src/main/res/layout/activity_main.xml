@@ -11,36 +11,41 @@
     tools:context="org.dalol.activitylifecycleyora.MainActivity">
 
     <TextView
+        android:id="@+id/activity_main_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="16dp"
         android:background="#aaaaaa"
-        android:id="@+id/activity_main_text"
+        android:padding="16dp"
         android:text="Not yet set !" />
 
     <!--只要给一个ID ，就可以把它的状态保存下来-->
     <EditText
+        android:id="@+id/activity_main_editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/activity_main_text"
-        android:layout_marginTop="8dp"
-        android:id="@+id/activity_main_editText"
-        />
+        android:layout_marginTop="8dp" />
 
     <Button
+        android:id="@+id/activity_main_button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-        android:text="A button"
-        android:id="@+id/activity_main_button"
-        />
+        android:text="A button" />
 
     <Button
+        android:id="@+id/activity_main_separate"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/activity_main_editText"
-        android:text="隔开"
-        android:id="@+id/activity_main_separate"
-        />
+        android:text="隔开" />
+
+    <Button
+        android:id="@+id/activity_main_logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/activity_main_separate"
+        android:layout_marginBottom="8dp"
+        android:text="Logout" />
 
 </RelativeLayout>
