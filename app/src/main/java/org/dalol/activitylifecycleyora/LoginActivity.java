@@ -19,6 +19,8 @@ public class LoginActivity extends BaseActivity {
 
                 Intent intent = new Intent(LoginActivity.this,MainActivity.class);
                 startActivity(intent);
+                finish(); // 不把这个Activity销毁的话，它会在BackStack当中，
+                // 这样在主界面上点击返回按钮，就又回到登陆界面上了。
             }
         });
     }
