@@ -48,6 +48,13 @@ public class SearchContactActivity extends BaseActivity {
                 Log.i(getLocalClassName(),"Search隔开");
             }
         });
+        findViewById(R.id.activity_search_contacts_goBack).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SearchContactActivity.this,MainActivity.class));
+                finish();
+            }
+        });
     }
     public interface trans{
         public void showResult(String str);

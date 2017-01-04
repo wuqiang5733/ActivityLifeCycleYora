@@ -38,5 +38,11 @@
         android:text="隔开"
         android:layout_marginBottom="8dp"
         />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Go back to Main Activity"
+        android:id="@+id/activity_search_contacts_goBack"
+        />
 
 </LinearLayout>
