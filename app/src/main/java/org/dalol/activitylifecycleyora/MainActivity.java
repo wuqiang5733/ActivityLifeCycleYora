@@ -24,6 +24,8 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+//        Log.d("测试MainActivity开始","测试");
+
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_main);
@@ -40,6 +42,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
 
         button.setOnClickListener(this);
         seperateButton.setOnClickListener(this);
+//        Log.d("测试MainActivity开始","测试");
 
     }
 

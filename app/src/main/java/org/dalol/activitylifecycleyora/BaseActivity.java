@@ -1,5 +1,6 @@
 package org.dalol.activitylifecycleyora;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -10,14 +11,27 @@ import android.util.Log;
  */
 
 public abstract class BaseActivity extends AppCompatActivity {
+    public static boolean IsLoggedIn = false;
+
     private String tag;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
+//        Log.d("测试BaseActivity开始","测试");
         super.onCreate(savedInstanceState);
         tag = getClass().getSimpleName();
+
+        if(!IsLoggedIn && getClass() != LoginActivity.class){
+            startActivity(new Intent(this,LoginActivity.class));
+            Log.e(tag,"-- onCreate being replaced with LoginActivity");
+            finish();
+            return;
+        }
+
 //        tag = getClass().getName();
         Log.e(tag,"-- onCreate");
+//        Log.d("测试BaseActivity结束","测试");
+
     }
     @Override
     protected void onStart() {

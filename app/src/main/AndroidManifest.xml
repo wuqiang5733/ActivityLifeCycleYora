@@ -18,7 +18,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".SelectContactActivity" />
-        <activity android:name=".SearchContactActivity"></activity>
+        <activity android:name=".SearchContactActivity" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>
